@@ -2,7 +2,9 @@
  ---
 
 @import "{{ site.theme }}";
-
+.test {
+    padding: 1rem
+}
 .page-header .thinner {
     padding:0rem 0rem
 }
