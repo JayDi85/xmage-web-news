@@ -7,8 +7,9 @@ title: XMage what's new page
 <ul>
     {% for post in site.posts %}
     <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
+        <h2><a href="{{ post.url }}">{{ page.date | date_to_string }} - {{ post.title }}</a></h2>
+
+        <p>{{ post.content }}</p>
     </li>
     {% endfor %}
 </ul>
