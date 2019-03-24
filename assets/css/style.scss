@@ -3,6 +3,19 @@
 
 @import "{{ site.theme }}";
 
-.page-header {
-    padding: 0rem 0rem;
+// thinner header
+@media screen and (min-width: 64em) {
+ .page-header {
+  padding:0rem 0rem
+ }
+}
+@media screen and (min-width: 42em) and (max-width: 64em) {
+ .page-header {
+  padding:0rem 0rem
+ }
+}
+@media screen and (max-width: 42em) {
+ .page-header {
+  padding:0rem 0rem
+ }
 }
