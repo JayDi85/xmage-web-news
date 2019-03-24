@@ -2,9 +2,10 @@
  ---
 
 @import "{{ site.theme }}";
-.test {
-    padding: 1rem
-}
-.page-header .thinner {
-    padding:0rem 0rem
+
+.page-header-thinner {
+ color:#fff;
+ text-align:center;
+ background-color:#159957;
+ background-image:linear-gradient(120deg, #155799, #159957)
 }
