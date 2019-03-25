@@ -1,5 +1,11 @@
- ---
- ---
+---
+---
 
-@import "{{ site.theme }}";
-@import "extra";
+@import 'jekyll-theme-cayman';
+
+.page-header-thinner {
+  color: $header-heading-color;
+  text-align: center;
+  background-color: $header-bg-color;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+}

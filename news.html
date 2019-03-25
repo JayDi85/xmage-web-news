@@ -1,13 +1,15 @@
 ---
 layout: news
-title: XMage what's new page
+title: XMage news page
 ---
-<h1>Latest news</h1>
 
 <ul>
     {% for post in site.posts %}
     <li>
-        <h2><a href="{{ post.url }}">{{ post.date | date_to_string }} - {{ post.title }}</a></h2>
+        <h2>{{ post.title }}</h2>
+        <!-- {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %} -->
+        <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+        <span class="post-meta">{{ post.date | date_to_string }}</span>
 
         <p>{{ post.content }}</p>
     </li>
