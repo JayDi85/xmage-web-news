@@ -1,2 +1,4 @@
-theme: jekyll-theme-cayman
+#it's a custom blog theme
+#theme: jekyll-theme-cayman-blog
+theme:
 google_analytics: UA-19889131-4

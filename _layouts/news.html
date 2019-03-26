@@ -1,35 +1,29 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-<head>
+---
+layout: news_basic
+---
 
-    {% if site.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
+<div>
 
-    {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-</head>
-<body>
+  {{ content }}
 
-<header class="page-header-thinner" role="banner">
-    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-    <a href="https://github.com/magefree/mage" class="btn">Support page on github</a>
-    <a href="http://xmage.today/" class="btn">Get BETA client</a>
-</header>
+  <!-- <h2>Latest updates</h2>-->
+  <!-- <div>&nbsp;</div>-->
 
-<main id="content" class="main-content" role="main">
-    {{ content }}
-</main>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
 
-</body>
-</html>
+        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <div class="post-header">{{ post.title | escape }}</div>
+        </h2>
+
+        <span>{{ post.content | markdownify}}</span>
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
