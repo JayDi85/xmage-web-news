@@ -1,7 +1,7 @@
 ---
 layout: post
 author: JayDi85
-title: Release 1.4.33V4b
+title: Release 1.4.33V4b - hotfixes for some cards
 ---
 ### NEW FEATURES
 

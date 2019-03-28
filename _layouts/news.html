@@ -14,7 +14,7 @@ layout: news_basic
       <li>
 
         {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>, <span class="post-author">{{ post.author }}</span>
 
         <h2>
           <div class="post-header">{{ post.title | escape }}</div>

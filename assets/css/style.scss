@@ -11,5 +11,11 @@
 }
 
 .post-header {
-  color: black;
+  color: $body-text-color;
+  font-weight: bold;
+}
+
+.post-author {
+  font-size: $small-font-size;
+  color: $section-headings-color;
 }
