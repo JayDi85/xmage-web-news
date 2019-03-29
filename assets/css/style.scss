@@ -19,3 +19,13 @@
   font-size: $small-font-size;
   color: $section-headings-color;
 }
+
+.emoji {
+  vertical-align: top;
+  max-height: 1.4em;
+  max-width: 1.4em;
+}
+
+.btn + .btn {
+  margin-left: 0rem;
+}
