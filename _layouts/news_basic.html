@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
 <head>
     {% if site.google_analytics %}
@@ -9,8 +9,33 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', '{{ site.google_analytics }}');
-      </script>
+    </script>
     {% endif %}
+    <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+    <script>
+$(document).ready(function() {
+  // load WAR status
+  //$("a").hide();
+
+   $.getJSON("https://api.github.com/repos/magefree/mage/issues/5662")
+  .done(function(data) {
+    var items = [];
+
+    var b = data["body"];
+    var doneCount = b.split(/\[x\]/).length - 1;
+    var notDoneCount = b.split(/\[ \]/).length - 1;
+    var totalCount = doneCount + notDoneCount;
+    if (totalCount > 0) {
+      $("#tasks-progress").text(doneCount + " of " + totalCount);
+      $("#tasks-progress").css('width', Math.floor(doneCount / totalCount * 100) + '%');
+      $(".tasks-status").show();
+    }
+  })
+  .fail(function(error) {
+    $(".tasks-status").hide();
+  });
+});
+    </script>
     <meta charset="UTF-8">
 
     {% if page.title %}
@@ -44,6 +69,13 @@
 </section>
 
 <section class="main-content">
+    <ul class="tasks-status" style="display:none">
+        War of the Spark set progress (<a href="https://github.com/magefree/mage/issues/5662">github</a>):
+        <div class="progress-with-border">
+            <div id="tasks-progress" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loading...</div>
+        </div>
+    </ul>
+
     {{ content }}
 </section>
 
