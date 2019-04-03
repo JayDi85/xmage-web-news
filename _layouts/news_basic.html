@@ -5,10 +5,21 @@
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
+        var userAgent = navigator.userAgent;
+        var userAgentSplit = userAgent.split('XMage/');
+        var xmageVersion = `unknown`;
+        if (userAgentSplit.length > 1) {
+            xmageVersion = userAgentSplit[1];
+        }
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
+        gtag('config', '{{ site.google_analytics }}', {
+           'custom_map': {
+                'dimension1': 'xmage-version'
+           }
+        });
+        gtag('event', 'version', {'xmage-version': xmageVersion});
     </script>
     {% endif %}
     <script src="assets/scripts/jquery-3.3.1.min.js"></script>
