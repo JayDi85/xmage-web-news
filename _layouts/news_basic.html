@@ -25,13 +25,14 @@
     <script src="assets/scripts/jquery-3.3.1.min.js"></script>
     <script>
 $(document).ready(function() {
+  // replace all github issue numbers to links
+  $("body").html($("body").html().replace(/\#(\d+)/gm, `<a href="https://github.com/magefree/mage/issues/$1">#$1</a>`));
+
   // load WAR status
   //$("a").hide();
-
-   $.getJSON("https://api.github.com/repos/magefree/mage/issues/5662")
+  $.getJSON("https://api.github.com/repos/magefree/mage/issues/5662")
   .done(function(data) {
     var items = [];
-
     var b = data["body"];
     var doneCount = b.split(/\[x\]/).length - 1;
     var notDoneCount = b.split(/\[ \]/).length - 1;
