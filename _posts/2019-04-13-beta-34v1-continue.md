@@ -5,7 +5,7 @@ title: BETA updates
 ---
 Third pack of cards from new War of the Spark (WAR) set were deployed on BETA server.
 
-Now it contains <strike>180</strike> <b>227 new full playable cards</b> from WAR (plus new cards from un-sets like Elvish House Party, Everythingamajig, Infernal Spawn of Evil and Miss Demeanor). It's also includes:
+Now it contains <strike>180</strike> <b>233 new full playable cards</b> from WAR (plus new cards from un-sets like Elvish House Party, Everythingamajig, Infernal Spawn of Evil and Miss Demeanor). It's also includes:
 
  * network and connection fixes;
  * rich man mode improves;
