@@ -1,5 +1,5 @@
 ---
 layout: news
-title: XMage news page
+title: XMage news
 ---
 
