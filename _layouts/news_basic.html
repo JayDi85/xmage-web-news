@@ -29,6 +29,7 @@ $(document).ready(function() {
   $("body").html($("body").html().replace(/\#(\d+)/gm, `<a href="https://github.com/magefree/mage/issues/$1">#$1</a>`));
 
   // load progress SET status
+  /*
   $.getJSON("https://api.github.com/repos/magefree/mage/issues/5607")
   .done(function(data) {
     var items = [];
@@ -45,6 +46,7 @@ $(document).ready(function() {
   .fail(function(error) {
     $(".tasks-status").hide();
   });
+  */
 });
     </script>
     <meta charset="UTF-8">
@@ -82,10 +84,12 @@ $(document).ready(function() {
 <section class="main-content">
     <ul class="tasks-status" style="display:none">
         Modern Horizons progress (<a href="https://github.com/magefree/mage/issues/5607">github topic</a>):
+
         <!-- complete image -->
         <!--
         <div><img src="https://user-images.githubusercontent.com/8344157/56532874-abcebb80-6567-11e9-92ed-3051c97828c7.png" alt="tada"></div>
         -->
+
         <!-- SET status progress bar -->
         <div class="progress-with-border">
             <div id="tasks-progress" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loading...</div>
