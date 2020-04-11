@@ -29,14 +29,13 @@ $(document).ready(function() {
   $("body").html($("body").html().replace(/\#(\d+)/gm, '<a href="https://github.com/magefree/mage/issues/$1">#$1</a>'));
 
 
-  /*
   // load progress SET status
-  $.getJSON("https://api.github.com/repos/magefree/mage/issues/6087")
+  $.getJSON("https://api.github.com/repos/magefree/mage/issues/6390")
   .done(function(data) {
     var items = [];
     var b = data["body"];
     var doneCount = b.split(/\[x\]/).length - 1;
-    var notDoneCount = b.split(/\[ \]/).length - 1;
+    var notDoneCount = b.split(/\[ \]/).length - 1 + 40*2;
     var totalCount = doneCount + notDoneCount;
     if (totalCount > 0) {
       $("#tasks-progress").text(doneCount + " of " + totalCount);
@@ -47,7 +46,6 @@ $(document).ready(function() {
   .fail(function(error) {
     $(".tasks-status").hide();
   });
-  */
 
 
 });
@@ -86,7 +84,7 @@ $(document).ready(function() {
 
 <section class="main-content">
     <ul class="tasks-status" style="display:none">
-        Theros: Beyond Death (<a href="https://github.com/magefree/mage/issues/6087">github topic</a>):
+        Ikoria: Lair of Behemoths (<a href="https://github.com/magefree/mage/issues/6390">github topic</a>):
 
         <!-- complete image -->
         <!--
