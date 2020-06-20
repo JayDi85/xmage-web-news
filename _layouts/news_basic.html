@@ -30,12 +30,12 @@ $(document).ready(function() {
 
 
   // load progress SET status
-  $.getJSON("https://api.github.com/repos/magefree/mage/issues/6390")
+  $.getJSON("https://api.github.com/repos/magefree/mage/issues/6608")
   .done(function(data) {
     var items = [];
     var b = data["body"];
     var doneCount = b.split(/\[x\]/).length - 1;
-    var notDoneCount = b.split(/\[ \]/).length - 1 + 40*2;
+    var notDoneCount = b.split(/\[ \]/).length - 1;
     var totalCount = doneCount + notDoneCount;
     if (totalCount > 0) {
       $("#tasks-progress").text(doneCount + " of " + totalCount);
@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 <section class="main-content">
     <ul class="tasks-status" style="display:none">
-        Ikoria: Lair of Behemoths (<a href="https://github.com/magefree/mage/issues/6390">github topic</a>):
+        Core Set 2021 (<a href="https://github.com/magefree/mage/issues/6608">github topic</a>):
 
         <!-- complete image -->
         <!--
