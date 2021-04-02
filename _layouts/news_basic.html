@@ -28,9 +28,8 @@ $(document).ready(function() {
   // replace all github issue numbers to links
   $("body").html($("body").html().replace(/\#(\d+)/gm, '<a href="https://github.com/magefree/mage/issues/$1">#$1</a>'));
 
-/*
   // load progress SET status
-  $.getJSON("https://api.github.com/repos/magefree/mage/issues/7248")
+  $.getJSON("https://api.github.com/repos/magefree/mage/issues/7602")
   .done(function(data) {
     var items = [];
     var b = data["body"];
@@ -46,7 +45,6 @@ $(document).ready(function() {
   .fail(function(error) {
     $(".tasks-status").hide();
   });
-  */
 
 });
     </script>
@@ -85,7 +83,7 @@ $(document).ready(function() {
 
 <section class="main-content">
     <ul class="tasks-status" style="display:none">
-        Kaldheim progress (<a href="https://github.com/magefree/mage/issues/7248">github topic</a>):
+        Strixhaven progress (<a href="https://github.com/magefree/mage/issues/7602">github topic</a>):
 
         <!-- complete image -->
         <!--
