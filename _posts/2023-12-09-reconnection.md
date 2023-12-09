@@ -4,13 +4,13 @@ author: JayDi85
 title: Network improved, reconnection mode and new cards
 ---
 Most important changes: new reconnection feature. Now users can safely restart 
-app and reconnect to server without game lost and after IP changes (after proxy/vpn/wifi/router restart).
+app and reconnect to the server without game lost and after IP changes (after proxy/vpn/wifi/router restart).
 
 If you catch any problems with miss data, random disconnects, 
-empty deck, not started game/tourney empty battlefield, instant loose, etc 
-then report it [that special github issue](https://github.com/magefree/mage/issues/11526).
+empty decks, not started game/tourney, empty battlefield, etc 
+then report it to [that special github issue](https://github.com/magefree/mage/issues/11526).
 
-Also, it contains new cards and reprints for:
+Also, new release contains dozens new cards and reprints for:
 * SLD, LCC, CLU, MKM;
 * MIR: Implement Tainted Specter, Sand Golem, Mangara's Blessing, Mangara's Equity;
 * ICE: Implement Hipparion;
@@ -31,7 +31,7 @@ Other improvements and fixes:
 * gui: main menu - improved switch panel button, added stats about current tables/panels;
 * gui: improved data sync and updates (fixes many use cases with empty battlefield, not started games/drafts/tourneys, not updatable drafts, etc);
 * gui: improved main and battlefield menus (better naming, allow to view AI opponent's deck);
-* many other card fixes;
+* other cards and qol fixes;
 
 Full change history available on GitHub as [commits history](https://github.com/magefree/mage/commits/) 
 or as [wiki page](https://github.com/magefree/mage/wiki/Release-changes)
