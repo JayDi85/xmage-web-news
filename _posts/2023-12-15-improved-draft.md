@@ -16,10 +16,11 @@ Also, new release contains new cards and reprints for:
 
 Other changes:
 * gui: hand - added default card sorting on mulligan (lands > other > creatures; mana value, name);
+* gui: lobby - improved details info about game (move mouse over info column for details);
+* ![shot_231215_174437](https://github.com/magefree/mage/assets/8344157/a7b09672-c158-47c1-be99-22449f15aead)
 * images: fixed miss images for double faced tokens like Incubator/Phyrexian;
 * game: copy abilities - fixed wrong copy of transformed tokens like Incubator/Phyrexian;
 * other fixes for reported cards and bugs;
-
 
 Full change history available on GitHub as [commits history](https://github.com/magefree/mage/commits/) 
 or as [wiki page](https://github.com/magefree/mage/wiki/Release-changes)
