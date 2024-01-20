@@ -21,7 +21,7 @@ Other:
 Abilities fixes:
 * Adds mana of any type produced - fixed support of multiple mana choices (example: Kinnan, Bonder Prodigy, #11643);
 * Can't be sacrificed - improved cards and combo support (example: Assault Suit, #11587);
-* Convoke, spend only mana produced by - improved combo support with some cards (example: Manamorphose can be used to cast Imperiosaur now, see #11620);
+* Convoke, spend only mana produced by - improved combo support with some cards (example: Manamorphose can't be used to cast Imperiosaur now, see #11620);
 * Hydra cards - fixed that copies enter to battlefield without counters (example: Magus Lucea Kane copy Neverwinter Hydra or Apocalypse Hydra, #11581);
 * Prevent damage - fixed that it was able to prevent damage for blinked/flickered permanents (example: Desert Sandstorm, #11606);
 
