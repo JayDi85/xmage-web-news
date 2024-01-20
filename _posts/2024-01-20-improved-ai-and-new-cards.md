@@ -39,7 +39,7 @@ Card fixes:
 * Incursion Specialist - fixed wrong block ability (#11589);
 * Karn Liberated - improved game restart support in commander games (#11628, #11081);
 * Mana Maze - fixed game error on usage (#11572, #11575);
-* Manamorphose - fixed that it can't be used to cast Imperiosaur (#11620);
+* Manamorphose - fixed that it can be used to cast Imperiosaur (#11620);
 * Michiko Konda, Truth Seeker - fixed miss trigger;
 * Mind Stone - fixed rarity in WOC set;
 * Morality Shift - fixed wrong exchange ability;
