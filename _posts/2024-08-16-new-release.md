@@ -71,13 +71,13 @@ New version introduced many improves in GUI like new Preferences dialog, HiDPI m
 * game: added zone info for played spell logs (#12632);
 
 ## Improved server stability and fixes
-* server: fixed game freeze on rollback usage for some use cases;
-* server: fixed game freeze on concede usage for some use cases (#11285, #11460);
-* server: fixed server app freeze on another instance already running, e.g. on app update;
-* server: fixed game errors in big/late games for some use cases (#11285);
-* server: fixed broken database in some use cases (example: AI and choose name dialog, #11285);
-* server: added logs and stats with a max users online;
-* server: fixed wrong cheating detection in some tourney sideboardings (#11877);
+* Fixed game freeze on rollback usage for some use cases;
+* Fixed game freeze on concede usage for some use cases (#11285, #11460);
+* Fixed server app freeze on another instance already running, e.g. on app update;
+* Fixed game errors in big/late games for some use cases (#11285);
+* Fixed broken database in some use cases (example: AI and choose name dialog, #11285);
+* Added logs and stats with a max users online;
+* Fixed wrong cheating detection in some tourney sideboardings (#11877);
 
 ## Other fixes
 * game: updated oracle texts, bans list and Canadian Highlander points (#12557);
