@@ -12,6 +12,7 @@ New release contains ~170 newly implemented cards from DSK, YNEO, ACR, BLB, BLC 
 - it allows to switch between UI dialogs and use any UI elements at any moment;
 - it allows to use chat, card popup, battlefield, concede and other features while choosing (#12670);
 - it allows to download images while playing (experimental feature, #4160);
+- example use case: before choose a card name you want to research battlefield and other zones;
 
 ## New GUI theme
 * added new dark theme named Carbon Fiber (see Preferences -> GUI theme, #12733);
