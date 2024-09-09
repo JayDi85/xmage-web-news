@@ -34,8 +34,8 @@
             var notDoneCount = b.split(/\[ \]/).length - 1;
             var totalCount = doneCount + notDoneCount;
             if (totalCount > 0) {
-              $("#task-" + issueId + ".progress-with-border").text(doneCount + " of " + totalCount);
-              $("#task-" + issueId + ".progress-with-border").css('width', Math.floor(doneCount / totalCount * 100) + '%');
+              $("#task-" + issueId + " .progress-with-border").text(doneCount + " of " + totalCount);
+              $("#task-" + issueId + " .progress-with-border").css('width', Math.floor(doneCount / totalCount * 100) + '%');
               $("#task-" + issueId + ".tasks-status").show();
             }
           })
