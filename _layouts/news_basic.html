@@ -24,29 +24,34 @@
     {% endif %}
     <script src="assets/scripts/jquery-3.3.1.min.js"></script>
     <script>
-$(document).ready(function() {
-  // replace all github issue numbers to links
-  $("body").html($("body").html().replace(/\#(\d+)/gm, '<a href="https://github.com/magefree/mage/issues/$1">#$1</a>'));
 
-  // load progress SET status
-  $.getJSON("https://api.github.com/repos/magefree/mage/issues/12534")
-  .done(function(data) {
-    var items = [];
-    var b = data["body"];
-    var doneCount = b.split(/\[x\]/).length - 1;
-    var notDoneCount = b.split(/\[ \]/).length - 1;
-    var totalCount = doneCount + notDoneCount;
-    if (totalCount > 0) {
-      $("#tasks-progress").text(doneCount + " of " + totalCount);
-      $("#tasks-progress").css('width', Math.floor(doneCount / totalCount * 100) + '%');
-      $(".tasks-status").show();
+    function loadTaskStatus(issueId) {
+        $.getJSON("https://api.github.com/repos/magefree/mage/issues/" + issueId)
+          .done(function(data) {
+            var items = [];
+            var b = data["body"];
+            var doneCount = b.split(/\[x\]/).length - 1;
+            var notDoneCount = b.split(/\[ \]/).length - 1;
+            var totalCount = doneCount + notDoneCount;
+            if (totalCount > 0) {
+              $("#task-" + issueId + ".progress-with-border").text(doneCount + " of " + totalCount);
+              $("#task-" + issueId + ".progress-with-border").css('width', Math.floor(doneCount / totalCount * 100) + '%');
+              $("#task-" + issueId + ".tasks-status").show();
+            }
+          })
+          .fail(function(error) {
+            $("#task-" + issueId + ".tasks-status").hide();
+          });
     }
-  })
-  .fail(function(error) {
-    $(".tasks-status").hide();
-  });
 
-});
+    $(document).ready(function() {
+      // replace all github issue numbers to links
+      $("body").html($("body").html().replace(/\#(\d+)/gm, '<a href="https://github.com/magefree/mage/issues/$1">#$1</a>'));
+
+      // load progress bars
+      loadTaskStatus(11853);
+      loadTaskStatus(12534);
+    });
     </script>
     <meta charset="UTF-8">
 
@@ -82,19 +87,20 @@ $(document).ready(function() {
 </section>
 
 <section class="main-content">
-    <ul class="tasks-status" style="display:none">
-        DSK - Duskmourn: House of Horror (<a href="https://github.com/magefree/mage/issues/12534">github topic</a>):
-
-        <!-- complete image -->
-        <!--
-        <div><img src="https://user-images.githubusercontent.com/8344157/56532874-abcebb80-6567-11e9-92ed-3051c97828c7.png" alt="tada"></div>
-        -->
-
-        <!-- SET status progress bar -->
-        <div class="progress-with-border">
-            <div id="tasks-progress" class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loading...</div>
-        </div>
-    </ul>
+    <div class="tasks">
+        <ul id="task-11853" class="tasks-status" style="display:none">
+            <span>BLB - Bloomburrow (<a href="https://github.com/magefree/mage/issues/11853">github</a>):</span>
+            <div class="progress-with-border">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loading...</div>
+            </div>
+        </ul>
+        <ul id="task-12534" class="tasks-status" style="display:none">
+            <span>DSK - Duskmourn (<a href="https://github.com/magefree/mage/issues/12534">github</a>):</span>
+            <div class="progress-with-border">
+                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Loading...</div>
+            </div>
+        </ul>
+    </div>
 
     {{ content }}
 </section>
