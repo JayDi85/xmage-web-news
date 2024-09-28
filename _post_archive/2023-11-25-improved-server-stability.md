@@ -20,4 +20,4 @@ or as [wiki page](https://github.com/magefree/mage/wiki/Release-changes)
 
 If you find any bugs or has ideas on new features or changes then report it on [github](https://github.com/magefree/mage/issues).
 
-If you like the project then you can [support it by patreon](http://xmage.today/#donate).
+If you like the project then you can [support it by patreon](https://xmage.today/#donate).

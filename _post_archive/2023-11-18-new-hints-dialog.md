@@ -51,7 +51,7 @@ Player highlight as possible target:
 Improved name button in small mode:
 ![shot_231118_140520](https://github.com/magefree/mage/assets/8344157/c91161ce-cbae-4437-a64d-57a25a91ef98)
 
-Please try new beta version in the [BETA server](http://xmage.today/) 
+Please try new beta version in the [BETA server](https://xmage.today/) 
 and report any bugs on [github](https://github.com/magefree/mage/issues).
 
-If you like the project then you can support it by [donate on patreon](http://xmage.today/#donate).
+If you like the project then you can support it by [donate on patreon](https://xmage.today/#donate).
