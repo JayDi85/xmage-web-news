@@ -13,6 +13,7 @@ New hot fix contains fixed regression error with triggers. Also it includes ~8 n
 
 ## Card fixes
 * Alesha, Who Laughs at Fate - fixed wrong boost (#13092);
+* Pollywog Prodigy - fixed game error on usage (#13097);
 
 ## New cards
 * Duskmourn: House of Horror:
