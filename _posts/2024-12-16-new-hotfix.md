@@ -1,9 +1,9 @@
 ---
 layout: post
 author: JayDi85
-title: Hot fixes, December 16 bans update and 6 new cards
+title: Hot-fix release and December banned cards
 ---
-New hot fix contains December 16 banned and restricted cards list. Also it includes ~6 new cards from different sets and some ability and card fixes.
+New hot-fix release contains December 16 banned and restricted cards list. It includes ~6 new cards from Baldur's Gate, Duskmourn, Foundations and other sets, some ability and card fixes too.
 
 ## Other fixes
 * game: updated bans list for [December 16 changes](https://magic.wizards.com/en/news/announcements/banned-and-restricted-december-16-2024);
