@@ -8,8 +8,6 @@ engines mechanics), but also includes new cards from other sets like PIP or DSK.
 It also contains reworked AI's blocking with more smarter AI and improved stability 
 and performance.
 
-Warning. current version can't run local server in some machines, new fix incoming...
-
 If you find any bugs or has ideas on new features or changes then report it on [github](https://github.com/magefree/mage/issues).
 
 If you like the project then you can [support it by patreon](https://xmage.today/#donate).
