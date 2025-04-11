@@ -25,6 +25,7 @@ New release contains 357 new cards, most from Tarkir and Aetherdrift (including 
 * GUI, game: added auto-resize to new popup windows like reveal/graveyard (#4351, #12281);
 * GUI, game: fixed game error in choose ability dialog on using CTRL and mouse wheel (#13148, #13186);
 * GUI, lobby: fixed error on mouse move over some table headers (#13331);
+* network: fixed that some players can be disconnected and immediately lose on mobile networks (#13155, 13390);
 
 ## Ability fixes
 * Choose a player at random - fixed that it wrongly choose same player (example: Scrambleverse, #12679, #13526);
