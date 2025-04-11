@@ -9,9 +9,6 @@ If you find any bugs or has ideas on new features or changes then report it on [
 
 If you like the project then you can [support it by patreon](https://xmage.today/#donate).
 
-## AI and images download, Tarkir set and 350+ new cards
-New release contains 357 new cards, most from Tarkir and Aetherdrift (including Omen, Mobilize and Harmonize mechanics), but also includes new cards from other sets like FIN, ACR, WHO and other. It also contains new combat rules without damage assignment order, fixes like scryfall images download, AI freezes, Rain of Riches's cascade and many other improves.
-
 ## AI
 * fixed game freeze on cards with combat triggers (#13342);
 
