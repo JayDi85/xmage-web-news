@@ -3,7 +3,7 @@ layout: post
 author: JayDi85
 title: Many new sets, tdfc, rooms, and ~1200 new cards
 ---
-New release contains ~1200 new cards from old and new sets, rooms mechanic from Duskmourn, ticket mechanic from Unfinity, Prepared spells, transforming double faced cards, waterbend and much more. It also contains 300+ changes and fixes for old cards and abilities.
+New release contains ~1200 new cards from old and new sets, rooms mechanic from Duskmourn, ticket mechanic from Unfinity, transforming double faced cards, waterbend and much more. It also contains 300+ changes and fixes for old cards and abilities.
 
 If you find any bugs or has ideas on new features or changes then report it on [github](https://github.com/magefree/mage/issues).
 
