@@ -3,7 +3,7 @@ layout: post
 author: JayDi85
 title: Many new sets, tdfc, rooms, and ~1200 new cards
 ---
-New release contains ~1200 new cards from old and new sets, rooms mechanic from Duskmourn, ticket mechanic from Unfinity, prepare, transforming double faced cards, waterbend and much more. It also contains 300+ changes and fixes for old cards and abilities.
+New release contains ~1200 new cards from old and new sets, rooms mechanic from Duskmourn, ticket mechanic from Unfinity, Prepared spells, transforming double faced cards, waterbend and much more. It also contains 300+ changes and fixes for old cards and abilities.
 
 If you find any bugs or has ideas on new features or changes then report it on [github](https://github.com/magefree/mage/issues).
 
@@ -47,7 +47,7 @@ If you like the project then you can [support it by patreon](https://xmage.today
 * Soulbond - improved combo support, including paired creatures (#14542);
 
 ## Card fixes
-* 300+ improves and fixes for old and new cards;
+* 300+ improvements and fixes for old and new cards;
 
 ## New cards
 * Total new cards: 1218;
@@ -129,7 +129,6 @@ If you like the project then you can [support it by patreon](https://xmage.today
   * True Identity
   * Veiled Ascension
 * Reality Fracture:
-  * Bloodline Recollector
   * Chandra, Chill of Compliance
   * Stingcaster Mage
 * Secret Lair Drop:
@@ -149,13 +148,13 @@ If you like the project then you can [support it by patreon](https://xmage.today
   * Blorbian Buddy
   * Ticket Turbotubes
 * Other sets:
-  * Abomination Irradiated Brute
+  * Abomination, Irradiated Brute
   * Gleemox
-  * Loki God of Lies
-  * M OD OK Evil Intellect
-  * Thanos Deaths Consort
+  * Loki, God of Lies
+  * M.O.D.O.K., Evil Intellect
+  * Thanos, Death's Consort
   * The Ice Dancer
-  * Ultron Machine Overlord
+  * Ultron, Machine Overlord
   
 Full change history available on GitHub as [commits history](https://github.com/magefree/mage/commits/)
 or as [wiki page](https://github.com/magefree/mage/wiki/Release-changes)
