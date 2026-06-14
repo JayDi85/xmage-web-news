@@ -35,8 +35,8 @@
             var totalCount = 0;
             
             // lookup in stats, see https://github.com/magefree/mage/blob/master/Utils/issue_tracker.tmpl
-            var implementedMatch = b.match(/Implemented cards:\s*(\d+)/i);
-            var unimplementedMatch = b.match(/Unimplemented cards:\s*(\d+)/i);
+            var implementedMatch = b.match(/Implemented cards:\s*(\d+));
+            var unimplementedMatch = b.match(/Unimplemented cards:\s*(\d+));
             if (implementedMatch && unimplementedMatch) {
                 doneCount = parseInt(implementedMatch[1]);
                 notDoneCount = parseInt(unimplementedMatch[1]);
