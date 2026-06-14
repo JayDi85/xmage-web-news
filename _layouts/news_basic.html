@@ -39,7 +39,7 @@
             var unimplementedMatch = b.match(/Unimplemented cards:\s*(\d+)/i);
             if (implementedMatch && unimplementedMatch) {
                 doneCount = parseInt(implementedMatch[1]);
-                notDoneCount = parseInt(unimplementedMat[1]);
+                notDoneCount = parseInt(unimplementedMatch[1]);
                 totalCount = doneCount + notDoneCount;
             } else {
                 // lookup in checkboxes
