@@ -30,9 +30,23 @@
           .done(function(data) {
             var items = [];
             var b = data["body"];
-            var doneCount = b.split(/\[x\]/).length - 1;
-            var notDoneCount = b.split(/\[ \]/).length - 1;
-            var totalCount = doneCount + notDoneCount;
+            var doneCount = 0;
+            var notDoneCount = 0;
+            var totalCount = 0;
+            
+            // lookup in stats, see https://github.com/magefree/mage/blob/master/Utils/issue_tracker.tmpl
+            var implementedMatch = b.match(/Implemented cards:\s*(\d+)/i);
+            var unimplementedMatch = b.match(/Unimplemented cards:\s*(\d+)/i);
+            if (implementedMatch && unimplementedMatch) {
+                doneCount = parseInt(implementedMatch[1]);
+                notDoneCount = parseInt(unimplementedMat[1]);
+                totalCount = doneCount + notDoneCount;
+            } else {
+                // lookup in checkboxes
+                doneCount = b.split(/\[x\]/).length - 1;
+                notDoneCount = b.split(/\[ \]/).length - 1;
+                totalCount = doneCount + notDoneCount;
+            }
             if (totalCount > 0) {
               $("#task-" + issueId + " .progress-bar").text(doneCount + " of " + totalCount);
               $("#task-" + issueId + " .progress-bar").css('width', Math.floor(doneCount / totalCount * 100) + '%');
