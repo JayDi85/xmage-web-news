@@ -1,7 +1,7 @@
 ---
 layout: post
 author: JayDi85
-title: Hot-fixes and 39 new cards from Marver's sets
+title: Hot-fixes and 39 new cards from Marvel's sets
 ---
 New release contains improved game error dialog and hot-fixes for some newly added cards. Also it includes 39 new cards from MSH and MSC.
 
