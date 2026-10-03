@@ -131,7 +131,7 @@ Implemented special rulebreakers that allow to pass some deck validation rules:
 
 
 ## New cards
-* Total new cards: 421;
+* Total new cards: 422;
 * Reality Fracture - added 234 new cards;
 * Secrets of Strixhaven - added 36 new cards (prepared);
 * Secrets of Strixhaven Commander - added 10 new cards (prepared);
@@ -292,6 +292,7 @@ Implemented special rulebreakers that allow to pass some deck validation rules:
   * The Master of Lake-town
   * The Notary Hobbits
   * Thranduil's Decree
+  * Wizard's Staff
 * Visions:
   * Time and Tide
 
